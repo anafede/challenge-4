@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body{
+    background-color:lightgrey;
+}
+
+
+.information,
+.quiz,
+.quiz-finish{
+    position: absolute;
+    margin-top:50%;
+    margin-left:50%;
+    transform: translate(-50%, -50%);
+    border-radius:10px; 
+}
+
+.start-btn{
+    position:absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+    
+}
+
+
+.start-btn button{
+    font-size: 30px;
+    font-weight:bold;
+    padding: 10px;
+    border: none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.information{
+    width:600px;
+    background-color:white;
+    display:block;
+}
+
+.information .rules{
+    width:100%;
+    height:80px;
+    font-size:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:white;
+
+}
+
+.rules-ul{
+    display:flex;
+    padding:20px 20px;
+    
+}
+
+.rules-ul li{
+    margin: 3px;
+    font-size:18px;
+    list-style-type:none;
+}
+
+.quiz{
+    display:none;
+    width:700px;
+    background-color:white;
+
+}
+
+.quiz header{
+    position:relative;
+    height:35px;
+    background-color:white;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    font-size:30px;
+
+
+}
+
+.quiz .timer{
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height:30px;
+    width: 200px;
+    padding: 15px;
+}
+
+.quiz .time-left{
+    font-size: 15px;
+}
+
+.quiz .seconds{
+    font-size:15px;
+    height: 40px;
+    width:50px;
+}
+
+.quiz section{
+    padding: 20px 30px 30px 30px;
+}
+
+.quiz section .question{
+    font-size: 18px;
+    font-weight:bold;
+    visibility: visible;
+}
+
+.quiz section .list-of-options{
+    display:block;
+    padding:0 15px;
+}
+
+section .list-of-options .choice{
+    background:lightblue;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    font-size: 15px;
+
+}
+
+section .list-of-options .chioce:hover{
+    background: darkblue;
+    color:white;
+}
+.quiz .footer{
+    height:50px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding: 0 20px;
+}
+
+ footer .next-btn{
+    height: 25px;
+    padding: 0 15px;
+    font-size:15px;
+    visibility: visible;
+}
+
+footer .score{
+    margin-left:300px;
+    font-weight:bold;
+    visibility: visible;
+}
+
+.quiz-finish{
+    background:white;
+    width:300px;
+    padding: 20px 20px;
+    display:none;
+    text-align:center;
+}
+
+.quiz-finish .restart-btn{
+    height: 25px;
+    padding: 0 15px;
+    font-size:15px;
+    
+}
+
+    
